@@ -1,73 +1,30 @@
-# Welcome to your Lovable project
+# BTEC — منصة الموارد الطلابية
 
-## Project info
+**BTEC** هو مشروع واجهة أمامية احترافي لطلاب الموارد الدراسية، مبني باستخدام **React + TypeScript**، ويجمع جميع الملفات الدراسية (PDF، فيديو، واجبات) في منصة واحدة أنيقة ومتجاوبة.
 
-**URL**: https://lovable.dev/projects/badcb06b-caa8-4a70-a3fd-9d89b96e400c
+---
 
-## How can I edit this code?
+## ✨ مميزات المشروع
+- واجهة **React + TypeScript** حديثة ومنظمة.  
+- **تصميم متجاوب** (Mobile & Desktop).  
+- صفحة **Resources** لعرض وتحميل الملفات.  
+- **لوحة طالب (Dashboard)** لتتبع الواجبات والتقدم.  
+- **حاسبة معدل GPA** لحساب أداء الطالب تلقائيًا.  
+- دعم **RTL و Dark Mode**.  
+- استخدام **React Router** للتنقل بين الصفحات بسهولة.  
+- دعم **Favicon** بشكل احترافي لجميع الصفحات.
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## 🗂️ بنية المجلد المقترحة
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/badcb06b-caa8-4a70-a3fd-9d89b96e400c) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🖼️ استدعاء Favicon في React
+في مشروع React، الـ favicon يتم وضعه عادة في **`public`**.  
+- ضع ملف `favicon.ico` داخل **`public/`**.  
+- في **`public/index.html`** أضف هذا داخل `<head>`:
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/badcb06b-caa8-4a70-a3fd-9d89b96e400c) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+```html
+<link rel="icon" href="%PUBLIC_URL%/favicon.ico" type="image/x-icon" />
+# ecl-btec
