@@ -46,10 +46,7 @@ const Index = () => {
   ];
 
   const stats = [
-    { label: "موارد تعليمية", value: "500+", icon: BookOpen },
-    { label: "طلاب مسجلين", value: "1,200+", icon: Users },
-    { label: "مدرسين", value: "50+", icon: Star },
-    { label: "معدل النجاح", value: "95%", icon: TrendingUp },
+
   ];
 
   const features = [
@@ -143,7 +140,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-foreground mb-4">
-              لماذا تختار منصة BTEC؟
+              لماذا تختار منصة Ecl BTEC؟
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               نوفر لك أدوات متطورة وموارد شاملة لتحقيق أفضل النتائج الأكاديمية
@@ -240,17 +237,18 @@ const Index = () => {
                 ابدأ الآن مجاناً
               </Link>
             </Button>
-            <Button 
-              asChild 
-              variant="outline" 
-              size="lg" 
-              className="border-white/30 text-white hover:bg-white/10 text-lg px-8 py-4"
-            >
-              <Link to="/resources">
-                تصفح الموارد
-              </Link>
-            </Button>
-          </div>
+        <Button
+        asChild
+        size="lg"
+        className="bg-white text-black font-semibold rounded-xl shadow-lg hover:bg-gray-200 hover:shadow-xl transition-all duration-300 text-lg px-10 py-5"
+      >
+        <Link to="/resources">
+          تصفح الموارد
+        </Link>
+      </Button>
+    </div>
+
+
         </div>
       </section>
 
@@ -263,7 +261,7 @@ const Index = () => {
                 <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
                   <BookOpen className="w-5 h-5 text-white" />
                 </div>
-                <h3 className="text-xl font-bold">BTEC Academy</h3>
+                <h3 className="text-xl font-bold"> Ecl BTEC </h3>
               </div>
               <p className="text-gray-300 mb-4 max-w-md">
                 منصة تعليمية شاملة توفر أفضل الموارد والأدوات للطلاب لتحقيق النجاح الأكاديمي
@@ -290,7 +288,7 @@ const Index = () => {
           </div>
           
           <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 BTEC Academy. جميع الحقوق محفوظة.</p>
+            <p>&copy; 2025 Ecl BTEC . جميع الحقوق محفوظة.</p>
           </div>
         </div>
       </footer>
