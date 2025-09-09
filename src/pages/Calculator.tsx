@@ -80,9 +80,9 @@ const GradeCalculator = () => {
       <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-8">
         <div className="container mx-auto px-4">
           <div className="text-center">
-            <h1 className="text-4xl font-bold mb-4">حاسبة المعدل الأكاديمي BTEC</h1>
+            <h1 className="text-4xl font-bold mb-4">حاسبة المعدل المهني  BTEC</h1>
             <p className="text-lg text-blue-100 max-w-2xl mx-auto">
-              احسب معدلك الأكاديمي بسهولة مع نظام الدرجات BTEC (P / M / D)
+              احسب معدلك المهني بسهولة مع نظام الدرجات BTEC (P / M / D)
             </p>
           </div>
         </div>
