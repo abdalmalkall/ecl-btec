@@ -6,42 +6,41 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import heroBanner from "@/assets/hero-banner.jpg";
-
 const Index = () => {
   // Featured resources data
   const featuredResources = [
     {
-      title: "مقدمة في البرمجة - الأساسيات",
-      subject: "البرمجة",
+      title: "مقدمة في إدارة الأعمال - الأساسيات",
+      subject: "إدارة الأعمال",
       unit: "الوحدة 1",
       type: "pdf" as const,
       fileSize: "2.1 MB",
       uploadDate: "2024-01-15",
       uploadedBy: "د. أحمد محمد",
-      description: "تعلم أساسيات البرمجة والمفاهيم الأساسية للخوارزميات",
-      tags: ["أساسيات", "برمجة", "خوارزميات"]
+      description: "تعلم أساسيات إدارة الأعمال والمفاهيم الأساسية مثل التخطيط والتنظيم",
+      tags: ["أساسيات", "تخطيط", "تنظيم"]
     },
     {
-      title: "شبكات الحاسوب - المحاضرة الأولى",
-      subject: "الشبكات",
+      title: "المحاسبة المالية - المحاضرة الأولى",
+      subject: "المحاسبة",
       unit: "الوحدة 1",
       type: "video" as const,
       fileSize: "45 MB",
       uploadDate: "2024-01-14",
-      uploadedBy: "د. سارة أحمد",
-      description: "شرح مفصل لأنواع الشبكات وبروتوكولات الاتصال",
-      tags: ["شبكات", "اتصالات", "بروتوكولات"]
+      uploadedBy: "د.  أحمد",
+      description: "شرح أساسيات المحاسبة المالية وإعداد القوائم المالية",
+      tags: ["محاسبة", "قوائم مالية", "تحليل"]
     },
     {
-      title: "تطوير المواقع - HTML & CSS",
-      subject: "تطوير الويب",
+      title: "التسويق الرقمي - استراتيجيات وحملات",
+      subject: "التسويق",
       unit: "الوحدة 2",
       type: "pdf" as const,
       fileSize: "3.2 MB",
       uploadDate: "2024-01-13",
       uploadedBy: "أ. محمد علي",
-      description: "دليل شامل لتعلم HTML و CSS من البداية",
-      tags: ["HTML", "CSS", "ويب"]
+      description: "دليل شامل لتعلم التسويق الرقمي وإنشاء الحملات واستهداف العملاء",
+      tags: ["تسويق", "استراتيجيات", "حملات"]
     }
   ];
 

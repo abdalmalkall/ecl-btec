@@ -13,71 +13,71 @@ const Dashboard = () => {
     currentGPA: 82.5,
     studyHours: 45,
   };
+const recentActivities = [
+  {
+    id: 1,
+    type: "download",
+    title: "تم تحميل: مقدمة في إدارة الأعمال",
+    time: "منذ ساعتين",
+    icon: FileText,
+  },
+  {
+    id: 2,
+    type: "assignment",
+    title: "تم تسليم واجب المحاسبة المالية",
+    time: "منذ 3 ساعات",
+    icon: CheckCircle,
+  },
+  {
+    id: 3,
+    type: "quiz",
+    title: "اختبار التسويق الرقمي - 85%",
+    time: "أمس",
+    icon: Trophy,
+  },
+  {
+    id: 4,
+    type: "resource",
+    title: "مورد جديد: إدارة الموارد البشرية المتقدمة",
+    time: "أمس",
+    icon: BookOpen,
+  },
+];
 
-  const recentActivities = [
-    {
-      id: 1,
-      type: "download",
-      title: "تم تحميل: مقدمة في البرمجة",
-      time: "منذ ساعتين",
-      icon: FileText,
-    },
-    {
-      id: 2,
-      type: "assignment",
-      title: "تم تسليم واجب الشبكات",
-      time: "منذ 3 ساعات",
-      icon: CheckCircle,
-    },
-    {
-      id: 3,
-      type: "quiz",
-      title: "اختبار قواعد البيانات - 85%",
-      time: "أمس",
-      icon: Trophy,
-    },
-    {
-      id: 4,
-      type: "resource",
-      title: "مورد جديد: HTML المتقدم",
-      time: "أمس",
-      icon: BookOpen,
-    },
-  ];
+const upcomingAssignments = [
+  {
+    id: 1,
+    title: "مشروع خطة أعمال لشركة ناشئة",
+    subject: "إدارة الأعمال",
+    dueDate: "2024-01-20",
+    status: "قيد العمل",
+    progress: 60,
+  },
+  {
+    id: 2,
+    title: "تقرير التحليل المالي السنوي",
+    subject: "المحاسبة",
+    dueDate: "2024-01-25",
+    status: "لم يبدأ",
+    progress: 0,
+  },
+  {
+    id: 3,
+    title: "اختبار استراتيجيات التسويق",
+    subject: "التسويق",
+    dueDate: "2024-01-22",
+    status: "مكتمل",
+    progress: 100,
+  },
+];
 
-  const upcomingAssignments = [
-    {
-      id: 1,
-      title: "مشروع تطبيق الويب",
-      subject: "تصميم المواقع",
-      dueDate: "2024-01-20",
-      status: "قيد العمل",
-      progress: 60,
-    },
-    {
-      id: 2,
-      title: "تقرير أمان الشبكات",
-      subject: "الشبكات",
-      dueDate: "2024-01-25",
-      status: "لم يبدأ",
-      progress: 0,
-    },
-    {
-      id: 3,
-      title: "اختبار البرمجة العملي",
-      subject: "البرمجة",
-      dueDate: "2024-01-22",
-      status: "مكتمل",
-      progress: 100,
-    },
-  ];
+const subjectProgress = [
+  { name: "إدارة الأعمال", progress: 85, color: "bg-blue-500" },
+  { name: "المحاسبة", progress: 70, color: "bg-green-500" },
+  { name: "التسويق", progress: 90, color: "bg-purple-500" },
+  { name: "الموارد البشرية", progress: 65, color: "bg-orange-500" },
+];
 
-  const subjectProgress = [
-    { name: "البرمجة", progress: 85, color: "bg-blue-500" },
-    { name: "الشبكات", progress: 70, color: "bg-green-500" },
-    { name: "تصميم المواقع", progress: 90, color: "bg-purple-500" },
-    { name: "قواعد البيانات", progress: 65, color: "bg-orange-500" },
-  ];
 
   const getStatusColor = (status: string) => {
     switch (status) {

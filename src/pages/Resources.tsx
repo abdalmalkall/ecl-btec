@@ -13,63 +13,65 @@ const Resources = () => {
   const [selectedType, setSelectedType] = useState("all");
 
   // Mock data - في التطبيق الحقيقي سيأتي من قاعدة البيانات
-  const resources = [
-    {
-      id: 1,
-      title: "مقدمة في البرمجة - الوحدة الأولى",
-      subject: "البرمجة",
-      unit: "الوحدة 1",
-      type: "pdf" as const,
-      fileSize: "2.5 MB",
-      uploadDate: "2024-01-15",
-      uploadedBy: "د. أحمد محمد",
-      description: "شرح أساسيات البرمجة ومفاهيم الخوارزميات الأساسية",
-      tags: ["أساسيات", "خوارزميات", "برمجة"]
-    },
-    {
-      id: 2,
-      title: "الشبكات والاتصالات - المحاضرة الثانية",
-      subject: "الشبكات",
-      unit: "الوحدة 2",
-      type: "video" as const,
-      fileSize: "45 MB",
-      uploadDate: "2024-01-14",
-      uploadedBy: "د. سارة أحمد",
-      description: "شرح تفصيلي لأنواع الشبكات وبروتوكولات الاتصال",
-      tags: ["شبكات", "بروتوكولات", "اتصالات"]
-    },
-    {
-      id: 3,
-      title: "تصميم المواقع - HTML و CSS",
-      subject: "تصميم المواقع",
-      unit: "الوحدة 1",
-      type: "pdf" as const,
-      fileSize: "3.8 MB",
-      uploadDate: "2024-01-13",
-      uploadedBy: "أ. محمد علي",
-      description: "تعلم أساسيات HTML و CSS لتصميم صفحات الويب",
-      tags: ["HTML", "CSS", "ويب"]
-    },
-    {
-      id: 4,
-      title: "قواعد البيانات - SQL أساسيات",
-      subject: "قواعد البيانات",
-      unit: "الوحدة 3",
-      type: "doc" as const,
-      fileSize: "1.2 MB",
-      uploadDate: "2024-01-12",
-      uploadedBy: "د. فاطمة يوسف",
-      description: "مقدمة في لغة SQL وكيفية التعامل مع قواعد البيانات",
-      tags: ["SQL", "بيانات", "استعلامات"]
-    }
-  ];
+ // Mock data - في التطبيق الحقيقي سيأتي من قاعدة البيانات
+const resources = [
+  {
+    id: 1,
+    title: "مقدمة في إدارة الأعمال - الوحدة الأولى",
+    subject: "إدارة الأعمال",
+    unit: "الوحدة 1",
+    type: "pdf" as const,
+    fileSize: "2.5 MB",
+    uploadDate: "2024-01-15",
+    uploadedBy: "د. أحمد محمد",
+    description: "شرح أساسيات إدارة الأعمال والمفاهيم الأساسية مثل التخطيط والتنظيم",
+    tags: ["أساسيات", "تخطيط", "تنظيم"]
+  },
+  {
+    id: 2,
+    title: "المحاسبة المالية - المحاضرة الثانية",
+    subject: "المحاسبة",
+    unit: "الوحدة 2",
+    type: "video" as const,
+    fileSize: "45 MB",
+    uploadDate: "2024-01-14",
+    uploadedBy: "د.  أحمد",
+    description: "شرح أساسيات المحاسبة المالية وإعداد القوائم المالية",
+    tags: ["محاسبة", "قوائم مالية", "تحليل"]
+  },
+  {
+    id: 3,
+    title: "إدارة الموارد البشرية - التخطيط والتوظيف",
+    subject: "الموارد البشرية",
+    unit: "الوحدة 1",
+    type: "pdf" as const,
+    fileSize: "3.8 MB",
+    uploadDate: "2024-01-13",
+    uploadedBy: "أ. محمد علي",
+    description: "تعلم أساسيات إدارة الموارد البشرية، التوظيف والتخطيط للموظفين",
+    tags: ["HR", "توظيف", "تنمية الموظفين"]
+  },
+  {
+    id: 4,
+    title: "التسويق الرقمي - استراتيجيات وحملات",
+    subject: "التسويق",
+    unit: "الوحدة 3",
+    type: "doc" as const,
+    fileSize: "1.2 MB",
+    uploadDate: "2024-01-12",
+    uploadedBy: "د. فاطمة يوسف",
+    description: "مقدمة في التسويق الرقمي وكيفية إنشاء الحملات واستهداف العملاء",
+    tags: ["تسويق", "استراتيجيات", "حملات"]
+  }
+];
 
-  const subjects = ["البرمجة", "الشبكات", "تصميم المواقع", "قواعد البيانات"];
-  const fileTypes = [
-    { value: "pdf", label: "PDF", icon: FileText },
-    { value: "video", label: "فيديو", icon: Video },
-    { value: "doc", label: "مستند", icon: BookOpen }
-  ];
+const subjects = ["إدارة الأعمال", "المحاسبة", "الموارد البشرية", "التسويق"];
+const fileTypes = [
+  { value: "pdf", label: "PDF", icon: FileText },
+  { value: "video", label: "فيديو", icon: Video },
+  { value: "doc", label: "مستند", icon: BookOpen }
+];
+
 
   const filteredResources = resources.filter(resource => {
     const matchesSearch = resource.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
